@@ -1,0 +1,657 @@
+@font-face {
+    font-family: customFont;
+    src: url(fonts/TrebuchetMS.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: customFont2;
+    src: url(fonts/BebasNeue.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: "WebSymbols-Regular";
+    src: url("WebSymbols-Regular.eot?") format("eot"), url("WebSymbols-Regular.woff") format("woff"), url("WebSymbols-Regular.ttf") format("truetype"), url("WebSymbols-Regular.svg#WebSymbols-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.clearfix {
+    clear: both;
+}
+
+body {
+    background-image: url(img/pattern.png);
+}
+
+.gear {
+    font-family: WebSymbols-Regular;
+    color: white;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+    font-family: customFont2;
+}
+
+
+.logo {
+    float: left;
+    width: 200px;
+    background-color: #37BCF9;
+    margin-top: 8px;
+    margin-left: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms;
+}
+
+.wrap .gear {
+    display: block;
+    float: left;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 5px;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.wrap .logo:hover {
+    border-radius: 2px;
+    background-color: gray;
+    color: white;
+    transform: none;
+}
+
+
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.wrap .logo:hover .gear {
+    animation: fromBellow 500ms linear;
+}
+
+.wrap .logo:hover h2 {
+    animation: fromBellow 500ms linear;
+}
+
+@keyframes fromBellow {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+.logo h2 {
+    display: block;
+    font-size: 40px;
+    color: white;
+}
+
+
+
+.menu {
+    float: right;
+    margin: 0px auto;
+
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 20px;
+    font-size: 30px;
+
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: rgb(37, 37, 226);
+    transform: scale(1.1);
+}
+
+header .banner {
+    display: block;
+    width: 100%;
+    height: 110px;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    background-image: url(img/bakbaner.png);
+    border: 1px solid black;
+    animation: backBanner 10s linear;
+}
+
+
+header .banner h1 {
+    letter-spacing: 5px;
+    padding-top: 35px;
+    font-size: 40px;
+    animation: showText 10s linear;
+}
+
+@keyframes backBanner {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: 200px 200px;
+    }
+}
+
+@keyframes showText {
+    0% {
+        transform: translateX(-600%) scale(5, 5);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(600%) scale(5, 5);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateX(-600%) scale(5, 5);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%) scale(1, 1);
+        text-shadow: 2px 2px 2px black;
+        color: white;
+        opacity: 1;
+    }
+}
+
+header .cards {
+    display: block;
+    width: 108%;
+    margin-top: 80px;
+
+}
+
+
+header .card {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    box-shadow: 0px 2px 2px black;
+    margin-right: 50px;
+    color: #044E88;
+    text-align: center;
+    padding-top: 40px;
+    transition: 500ms;
+    overflow: hidden;
+}
+
+
+header .card:hover {
+    background-color: #000000;
+    color: white;
+
+}
+
+header .card:hover span {
+    color: #044E88;
+    font-size: 50px;
+    animation: showIcon 300ms linear;
+}
+
+header .card:hover h4 {
+    animation: showTitle 300ms linear;
+}
+
+header .card:hover p {
+    animation: showText 300ms linear;
+}
+
+
+@keyframes showIcon {
+    from {
+        transform: translateY(-200%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes showText {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes showTitle {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+
+header .card .font {
+    font-family: WebSymbols-Regular;
+    color: black;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+header h4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+header p {
+    padding-bottom: 30px;
+}
+
+
+main {
+    display: block;
+    width: 100%;
+    margin-top: 140px;
+}
+
+
+main .articulos {
+    width: 60%;
+    min-height: 1120px;
+}
+
+main #h2articulos {
+    background-color: #E2E2E2;
+    text-align: center;
+    font-family: customFont2;
+    letter-spacing: 3px;
+    font-size: 30px;
+    padding: 20px;
+    box-shadow: 0px 4px 2px black;
+}
+
+.articulo {
+    display: left;
+    margin-top: 40px;
+    border: 1px solid black;
+
+}
+
+.articulos {
+    display: inline-block;
+}
+
+.articulo .date {
+    float: right;
+    background-color: #000000;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    padding: 4px;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.articulo h3 {
+    padding: 10px;
+}
+
+.articulo p {
+    padding: 10px;
+}
+
+.articulo_enlace {
+    display: block;
+    margin-top: 40px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 35px;
+    font-size: 40px;
+    transition: 500ms;
+}
+
+.articulo_enlace:hover {
+    background-color: #555;
+    border-radius: 100px;
+    border: 10px solid #0898ff;
+    box-shadow: 0px 0px 10px gray;
+    animation: blink 10s infinite linear;
+}
+
+.articulo_enlace:hover a {
+    color: white;
+    text-shadow: 1px 1px 1px black, 1px 1px 1px black, 1px 1px 5px black, 1px 1px 5px black, 1px 1px 10px black;
+}
+
+@keyframes blink {
+    0% {
+        border: 10px solid #37bcf9
+    }
+
+    25% {
+        border: 10px solid #344851
+    }
+
+    50% {
+        border: 10px solid #00d440
+    }
+
+    75% {
+        border: 10px solid #b2f204
+    }
+
+    100% {
+        border: 10px solid #e70677
+    }
+}
+
+
+.articulo_enlace a {
+    text-decoration: none;
+    color: #00528B;
+}
+
+
+
+.frontal {
+    float: right;
+    width: 40%;
+
+
+}
+
+.icon {
+    font-family: WebSymbols-Regular;
+}
+
+.formulario {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.frontal #h2frontal {
+    height: 40px;
+    padding: 10px;
+    background-color: #E2E2E2;
+    font-family: customFont2;
+    letter-spacing: 3px;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 0px 4px 2px black;
+    margin-top: 20px;
+}
+
+.search {
+    width: 90%;
+    height: 30px;
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #ccc inset;
+}
+
+.frontal input[type="text"],
+.frontal input[type="password"],
+.frontal input[type="email"] {
+    width: 85%;
+    height: 30px;
+    border: none;
+    padding-left: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    color: #ccc;
+}
+
+.frontal input[type="button"] {
+    height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid #ccc;
+    color: #555;
+    padding-left: 7px;
+}
+
+.frontal #user {
+    padding: 2px;
+    font-size: 20px;
+}
+
+.frontal #password {
+    font-size: 20px;
+    padding: 4px;
+
+}
+
+.frontal form {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 90%;
+    border: 1px solid;
+    height: auto;
+    box-shadow: 0px 2px 2px black;
+}
+
+.frontal button {
+    background-color: #36ADD8;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0px 1px 2px blue;
+}
+
+.frontal .enlances1 {
+    margin: 20px;
+}
+
+.frontal label a {
+    text-decoration: none;
+
+}
+
+.frontal .caja {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 90%;
+    border: 1px solid;
+    height: auto;
+    box-shadow: 0px 2px 2px black;
+}
+
+.frontal .caja .redes {
+    padding: 20px;
+    padding-top: 20px;
+    font-size: 40px;
+
+}
+
+.frontal .caja .redes a {
+    color: black;
+}
+
+.frontal .caja .overlay {
+    font-size: 15px;
+    display: block;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px wheat;
+    border: 1px solid white;
+    box-shadow: 0px 0px 4px #ccc;
+    background: #E2E2E2;
+    position: absolute;
+    padding: 5px;
+    margin-left: 70px;
+    margin-top: -40px;
+    cursor: pointer;
+    transform: translateX(-80%);
+    opacity: 0;
+    transition: 400ms all;
+}
+
+.frontal .caja div:hover .overlay {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.frontal #ultima {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 90%;
+    border: 1px solid;
+    height: 250px;
+    box-shadow: 0px 2px 2px black;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    font-family: customFont2;
+    margin-top: 50px;
+}
+
+footer .footercajas {
+    display: inline-flex;
+    width: 100%;
+}
+
+footer .footercaja {
+    display: inline-block;
+    width: 30%;
+    margin-left: 20px;
+}
+
+footer h2 {
+    height: 40px;
+    width: 300px;
+    padding: 10px;
+    background-color: #E2E2E2;
+    font-family: customFont2;
+    letter-spacing: 3px;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 0px 4px 2px black;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+footer nav {
+    margin-top: 20px;
+}
+
+footer ul li {
+    margin-left: 30px;
+    color: white;
+}
+
+footer ul li a {
+    color: #3CCAFF;
+    padding-top: 15px;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    font-style: customFont;
+    transition: 500ms;
+
+}
+
+footer ul li:hover a {
+    padding-left: 30px;
+    color: white;
+}
+
+footer .navegadores {
+    text-align: center;
+    margin: 10px;
+}
+
+footer iframe {
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+}
+
+footer img {
+    width: 40px;
+}
+
+footer #desarrolladocon {
+    width: 300px;
+    margin: 10px;
+}
+
+footer h5 {
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 10px;
+}

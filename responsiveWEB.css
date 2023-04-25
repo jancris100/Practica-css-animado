@@ -1,0 +1,307 @@
+@media(max-width: 1250px) {
+    .wrap {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .main {
+        clear: both;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+    }
+
+    .cards {
+        width: 190px;
+
+    }
+
+    .cards p {
+        display: block;
+        width: 90%;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    .articulos {
+        width: 65%;
+        clear: both;
+    }
+
+    .articulos .articulo {
+        width: 97%;
+    }
+
+    header .card {
+        width: 160px;
+    }
+
+
+    footer div {
+        width: 24%;
+        margin: 4%;
+    }
+
+    footer {
+        width: 106%;
+    }
+
+    footer .footercajas {
+        width: 80%;
+    }
+
+    footer div img {
+        width: 80%;
+    }
+
+    footer h2 {
+        font-size: 30px;
+    }
+
+    footer .navegadores {
+        display: inline-flex;
+    }
+}
+
+@media(max-width: 1100px) {
+
+    header .card {
+        width: 150px;
+        margin-top: 10px;
+    }
+
+}
+
+@media(max-width: 1080px) {
+
+    header .card {
+        width: 140px;
+        margin-top: 10px;
+    }
+
+
+    header .card .font {
+        font-size: 30px;
+    }
+
+    header .card h4 {
+        font-size: 15px;
+    }
+
+    footer .footercajas {
+        width: 79%;
+    }
+
+    footer h2 {
+        font-size: 26px;
+        width: 230px;
+    }
+
+    footer iframe {
+        width: 250px;
+    }
+}
+
+@media(max-width: 1008px) {
+    .frontal input[type="button"] {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 905px) {
+    .frontal input[type="button"] {
+        font-size: small;
+    }
+}
+
+
+@media(max-width: 892px) {
+    header .banner h1 {
+
+        font-size: 30px;
+    }
+
+    header .card .font {
+        font-size: 15px;
+    }
+
+    footer iframe {
+        width: 200px;
+    }
+
+    footer h2 {
+        font-size: 20px;
+        width: 180px;
+    }
+
+    footer h2 {
+        height: 25px;
+    }
+
+    footer #desarrolladocon {
+        width: 200px;
+    }
+}
+
+@media(max-width: 860px) {
+    .frontal {
+        margin-right: 60px;
+        align-items: center;
+    }
+
+    main .articulos {
+        width: 50%;
+    }
+}
+
+@media(max-width: 690px) {
+
+    header .card {
+        height: auto;
+    }
+
+    header .cards p {
+        display: none;
+    }
+
+    header .cards h4 {
+        font-size: 14px;
+        margin: 0px auto;
+    }
+
+    header .cards .font {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 681px) {
+
+    header {
+        width: 100%;
+        height: 130px;
+        padding-top: 10px;
+    }
+
+    header .menu {
+        display: contents;
+        clear: both;
+        width: auto;
+
+    }
+
+    header .banner {
+        margin-top: 50px;
+        
+    }
+
+    .logo {
+        float: none;
+        align-items: center;
+        margin: 0px auto;
+        margin-right: 190px;
+        margin-top: 10px;
+    }
+
+    .menu ul li {
+
+        margin-right: 75px;
+    }
+
+    footer h2 {
+        height: auto;
+        width: auto;
+    }
+
+    footer iframe{
+        width: 120px;
+    }
+
+    footer #desarrolladocon {
+        width: 150px;
+    }
+    footer div img {
+        width: 66%;
+    }
+
+    .menu ul li {
+        margin-right: 50px;
+    }
+}
+
+@media(max-width: 560px) {
+    .menu ul li {
+        margin-right: 36px;
+    }
+
+    .frontal{
+        width: 100%;
+    }
+
+    main .articulos {
+        width: 100%;
+    }
+    main .frontal{
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    footer h2{
+        width: 70%;
+    }
+
+    footer iframe{
+        width: 70%;
+    }
+
+    footer div img{
+        width: 50%;
+    }
+
+    footer .footercajas{
+        display: block;
+         width: 100%;
+    }
+
+    footer #desarrolladocon {
+        width: 300px;
+    }
+    footer .footercaja{
+        width: 100%;
+   }
+
+   footer h5{
+       width: 70%;
+       font-size: 15px;
+   }
+
+   footer #copyright{
+       width: 100%;
+   }
+}
+   @media(max-width: 497px) {
+    header{
+        height: 300px;
+    }
+    header .menu ul li{
+        width: 100%;
+    }
+}
+    @media(max-width: 376px) {
+       
+        header .card{
+            margin-left: 100px;
+        }
+
+        header .menu ul li{
+            margin-left: 30px;
+        }
+
+        header .{
+            margin-left: 30px;
+        }
+    }
